@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DatHang.TabDatHang.DoAnFragment">
+
+    <LinearLayout
+        android:id="@+id/header_da_118"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Thức ăn nhẹ"
+            android:textSize="18dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="8dp"></TextView>
+    </LinearLayout>
+    <GridView
+        android:id="@+id/gridview2_118"
+        android:layout_below="@+id/header_da_118"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="1dp"
+        android:verticalSpacing="1dp"
+        android:numColumns="2"
+        ></GridView>
+
+</RelativeLayout>

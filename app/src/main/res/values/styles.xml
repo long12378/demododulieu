@@ -1,0 +1,39 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+<!--        <item name="android:popupMenuStyle">@style/PopupMenu</item>-->
+
+
+    </style>
+    <style name="PopupMenuStyle" parent="android:Theme.Holo.Light">
+       <item name="android:maxWidth">300dp</item>
+    </style>
+
+    //1. Đổi màu nguyên khung menu con
+<!--    <style name="PopupMenu" parent="android:Widget.Holo.Light.ListPopupWindow">-->
+<!--        <item name="android:popupBackground">#888888</item>-->
+<!--    </style>-->
+    <style name="TabLayoutStyle" parent="Base.Widget.Design.TabLayout">
+        <item name="android:textSize">23dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">#ffffff</item>
+        <item name="android:checkable">true</item>
+        <item name="android:width">@dimen/material_emphasis_high_type</item>
+        <item name="height">@dimen/material_emphasis_medium</item>
+    </style>
+    <style name="TabLayoutStyleHome" parent="Base.Widget.Design.TabLayout">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">#ffffff</item>
+        <item name="android:checkable">true</item>
+        <item name="android:width">@dimen/material_emphasis_high_type</item>
+        <item name="height">@dimen/material_emphasis_medium</item>
+    </style>
+</resources>

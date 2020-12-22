@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_tintuc"
+        android:icon="@drawable/tintuc"
+        android:title="@string/title_tintuc" />
+
+    <item
+        android:id="@+id/navigation_dathang"
+        android:icon="@drawable/dathang"
+        android:title="@string/title_dathang" />
+
+    <item
+        android:id="@+id/navigation_cuahang"
+        android:icon="@drawable/cuahang"
+        android:title="@string/title_cuahang" />
+
+    <item
+        android:id="@+id/navigation_taikhoan"
+        android:icon="@drawable/taikhoan"
+        android:title="@string/title_taikhoan" />
+
+</menu>

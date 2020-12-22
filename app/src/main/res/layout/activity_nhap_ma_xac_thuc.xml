@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NhapMaXacThuc">
+    <ImageView
+        android:id="@+id/quaylai2_nhapsodienthoai_118"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_quaylai"></ImageView>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/thanhngang_nhapsodienthoai_118"
+        android:layout_below="@+id/quaylai2_nhapsodienthoai_118"
+        android:layout_width="match_parent"
+        android:background="#969696"
+        android:layout_height="2dp">
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txt_nhapma_118"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/thanhngang_nhapsodienthoai_118"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:text="Nhập mã xác thực gồm 6 số đã được gửi đến số điện thoại 0965072230 để tiếp tục">
+    </TextView>
+    <EditText
+        android:id="@+id/nhapmaxacthuc_118"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:paddingStart="20dp"
+        android:hint="Mã xác thực"
+        android:textColorHighlight="#7cff88"
+        android:layout_below="@+id/txt_nhapma_118"
+        app:counterEnabled="true"
+        android:background="@drawable/duongvien1">
+    </EditText>
+    <Button
+        android:id="@+id/btnmaxacthuc_118"
+        android:layout_width="375dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/nhapmaxacthuc_118"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/duongvien3"
+        android:text="Tiếp tục"
+        android:textColor="#FFF"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_marginTop="120dp"></Button>
+    <TextView
+        android:id="@+id/boqua2_118"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnmaxacthuc_118"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:text="Bỏ qua"
+        android:textSize="18dp"
+        android:textColor="#9CC7FC"
+        android:layout_centerHorizontal="true"></TextView>
+</RelativeLayout>

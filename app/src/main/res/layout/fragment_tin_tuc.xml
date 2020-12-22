@@ -1,0 +1,815 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    tools:context=".TinTuc.TinTucFragment">
+    //1. Header Home
+   <RelativeLayout
+       android:id="@+id/header_tintic_118"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <ImageView
+           android:id="@+id/anhdaidien3_118"
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+           android:src="@drawable/anhdaidien2"
+           android:layout_marginTop="15dp"
+           android:layout_marginBottom="15dp"
+           android:layout_marginLeft="20dp">
+       </ImageView>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Vũ Anh Khoa Nguyễn"
+           android:textColor="#1A1A1A"
+           android:textStyle="bold"
+           android:textSize="19dp"
+           android:layout_marginTop="10dp"
+           android:layout_marginLeft="80dp"></TextView>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="45dp"
+           android:layout_marginLeft="80dp"
+           android:text="Khách hàng mới"
+           android:textSize="18dp"></TextView>
+       <LinearLayout
+           android:layout_width="1dp"
+           android:layout_height="25dp"
+           android:background="#222222"
+           android:layout_marginTop="45dp"
+           android:layout_marginLeft="215dp">
+       </LinearLayout>
+       <ImageView
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:layout_marginTop="43dp"
+           android:layout_marginLeft="230dp"
+           android:src="@drawable/traicaphe">
+       </ImageView>
+       <ImageView
+           android:id="@+id/chuongthongbao2_118"
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:layout_marginLeft="340dp"
+           android:layout_marginTop="20dp"
+           android:src="@drawable/chuongthongbao2"></ImageView>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:layout_below="@id/anhdaidien3_118"
+           android:background="#C0C0C1">
+       </LinearLayout>
+   </RelativeLayout>
+    //2. Phần nội dung chính
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header_tintic_118"
+        android:background="#F0EFF4">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            //2.1 Main 1
+            <RelativeLayout
+                android:id="@+id/tintuc1_118"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#fff">
+                //2.1.1 Tích điểm
+                <ImageView
+                    android:id="@+id/tichdiem_118"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/tichdiem">
+                </ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tichdiem_118"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="Tích điểm"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#222222">
+                </TextView>
+                //2.1.2 Đặt hàng
+                <ImageView
+                    android:id="@+id/dathang_118"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@id/tichdiem_118"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/dathang2">
+                </ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tichdiem_118"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="119dp"
+                    android:text="Đặt hàng"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#222222">
+                </TextView>
+                //2.1.3 Coupon
+                <ImageView
+                    android:id="@+id/coupon_118"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@id/dathang_118"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/coupon">
+                </ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/coupon_118"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="225dp"
+                    android:text="Coupon"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#222222">
+                </TextView>
+                //2.1.4 Rewards
+                <ImageView
+                    android:id="@+id/reward_118"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@id/coupon_118"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/reward">
+                </ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/reward_118"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="325dp"
+                    android:text="Reward"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#222222">
+                </TextView>
+            </RelativeLayout>
+            //2.2 Ưu đãi đặc biệt
+            <RelativeLayout
+                android:id="@+id/tintuc2_118"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tintuc1_118">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Ưu đãi đặc biệt"
+                    android:textColor="#28272C"
+                    android:textSize="22dp"
+                    android:textStyle="bold"></TextView>
+            </RelativeLayout>
+            //2.2 Nội dung ưu đãi đặt biệt
+            <HorizontalScrollView
+                android:id="@+id/listuudai_118"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tintuc2_118"
+                android:layout_marginTop="20dp">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    //2.2.1 Ưu đãi 1
+                    <RelativeLayout
+                        android:id="@+id/uudai1_118"
+                        android:layout_width="260dp"
+                        android:layout_height="360dp"
+                        android:layout_marginLeft="25dp"
+                        android:background="@drawable/duongvien4">
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/img_hinh1_118"
+                            android:layout_width="260dp"
+                            android:layout_height="140dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="0dp">
+                            <ImageView
+                                tools:ignore="ContentDescription"
+                                android:scaleType="centerCrop"
+                                android:layout_width="260dp"
+                                android:layout_height="130dp"
+                                android:background="@drawable/uudai1" />
+                        </androidx.cardview.widget.CardView>
+                        <TextView
+                            android:id="@+id/tieude_uudai1_118"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/img_hinh1_118"
+                            android:textColor="#181818"
+                            android:textSize="19dp"
+                            android:textStyle="bold"
+                            android:text="Nhà mời 20%, PICK UP nha"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="15dp">
+                        </TextView>
+                        <TextView
+                            android:id="@+id/noidung_uudai1_118"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tieude_uudai1_118"
+                            android:textColor="#181818"
+                            android:textSize="17dp"
+                            android:text="Trải nghiệm ngay tính năng PICKUP của nhà với ưu đãi GIẢM 20% cho đơn hàng trên 100.000VND"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="15dp">
+                        </TextView>
+                        <Button
+                            android:id="@+id/btnuudai1_118"
+                            android:layout_width="130dp"
+                            android:layout_height="60dp"
+                            android:layout_below="@+id/noidung_uudai1_118"
+                            android:background="@drawable/duongvien6"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:text="Order ngay"
+                            android:textColor="#FDCA89"
+                            android:textStyle="bold"></Button>
+                    </RelativeLayout>
+                    //2.2.2 Ưu đãi 2
+                    <RelativeLayout
+                        android:id="@+id/uudai2_118"
+                        android:layout_width="260dp"
+                        android:layout_height="360dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@+id/uudai1_118"
+                        android:background="@drawable/duongvien4">
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/img_hinh2_118"
+                            android:layout_width="260dp"
+                            android:layout_height="140dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="0dp">
+                            <ImageView
+                                tools:ignore="ContentDescription"
+                                android:scaleType="centerCrop"
+                                android:layout_width="260dp"
+                                android:layout_height="130dp"
+                                android:background="@drawable/uudai2" />
+                        </androidx.cardview.widget.CardView>
+                        <TextView
+                            android:id="@+id/tieude_uudai2_118"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/img_hinh2_118"
+                            android:textColor="#181818"
+                            android:textSize="19dp"
+                            android:textStyle="bold"
+                            android:text="Nhà mời cà phê đậm đà, chỉ 12K"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="15dp">
+                        </TextView>
+                        <TextView
+                            android:id="@+id/noidung_uudai2_118"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tieude_uudai2_118"
+                            android:textColor="#181818"
+                            android:textSize="17dp"
+                            android:text="Tuần mới chỉ thật sự tươi tỉnh khi có một tách cà phê đậm đà kề bên"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="15dp">
+                        </TextView>
+                        <Button
+                            android:layout_width="130dp"
+                            android:layout_height="60dp"
+                            android:layout_below="@+id/noidung_uudai2_118"
+                            android:background="@drawable/duongvien6"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:text="Chi tiết"
+                            android:textColor="#FDCA89"
+                            android:textStyle="bold"></Button>
+                    </RelativeLayout>
+                    //2.2.3 Ưu đãi 3
+                    <RelativeLayout
+                        android:id="@+id/uudai3_118"
+                        android:layout_width="260dp"
+                        android:layout_height="360dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@+id/uudai2_118"
+                        android:background="@drawable/duongvien4">
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/img_hinh3_118"
+                            android:layout_width="260dp"
+                            android:layout_height="140dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="0dp">
+                            <ImageView
+                                tools:ignore="ContentDescription"
+                                android:scaleType="centerCrop"
+                                android:layout_width="260dp"
+                                android:layout_height="130dp"
+                                android:background="@drawable/uudai3" />
+                        </androidx.cardview.widget.CardView>
+                        <TextView
+                            android:id="@+id/tieude_uudai3_118"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/img_hinh3_118"
+                            android:textColor="#181818"
+                            android:textSize="19dp"
+                            android:textStyle="bold"
+                            android:text="Mua 3 tặng 1 - Mời nhóm mình chung vui"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="15dp">
+                        </TextView>
+                        <TextView
+                            android:id="@+id/noidung_uudai3_118"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tieude_uudai3_118"
+                            android:textColor="#181818"
+                            android:textSize="17dp"
+                            android:text="Không để team mình có những khoảng lặng buồn chán vì shipper sẵn sáng giao"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="15dp">
+                        </TextView>
+                        <Button
+                            android:layout_width="130dp"
+                            android:layout_height="60dp"
+                            android:layout_below="@+id/noidung_uudai3_118"
+                            android:background="@drawable/duongvien6"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:text="Order ngay"
+                            android:textColor="#FDCA89"
+                            android:textStyle="bold">
+                        </Button>
+                    </RelativeLayout>
+                    //2.2.4 Ưu đãi 4
+                    <RelativeLayout
+                        android:id="@+id/uudai4_118"
+                        android:layout_width="260dp"
+                        android:layout_height="360dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@+id/uudai3_118"
+                        android:background="@drawable/duongvien4">
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/img_hinh4_118"
+                            android:layout_width="260dp"
+                            android:layout_height="140dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="0dp">
+                            <ImageView
+                                tools:ignore="ContentDescription"
+                                android:scaleType="centerCrop"
+                                android:layout_width="260dp"
+                                android:layout_height="130dp"
+                                android:background="@drawable/uudai4" />
+                        </androidx.cardview.widget.CardView>
+                        <TextView
+                            android:id="@+id/tieude_uudai4_118"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/img_hinh4_118"
+                            android:textColor="#181818"
+                            android:textSize="19dp"
+                            android:textStyle="bold"
+                            android:text="Team Hà Nội gọi combo trà mát, Nhà tặng ngay ly xịn sò"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="15dp">
+                        </TextView>
+                        <TextView
+                            android:id="@+id/noidung_uudai4_118"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tieude_uudai4_118"
+                            android:textColor="#181818"
+                            android:textSize="17dp"
+                            android:text="Team Hà Nội ơi, tưởng chuyện đùa nhưng hoàn toàn nghiêm túc tại Nhà đó nha."
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="15dp">
+                        </TextView>
+                        <Button
+                            android:layout_width="130dp"
+                            android:layout_height="60dp"
+                            android:layout_below="@+id/noidung_uudai4_118"
+                            android:background="@drawable/duongvien6"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:text="Chi tiết"
+                            android:textColor="#FDCA89"
+                            android:textStyle="bold">
+                        </Button>
+                    </RelativeLayout>
+                    //2.2.5 Ưu đãi 5
+                    <RelativeLayout
+                        android:id="@+id/uudai5_118"
+                        android:layout_width="260dp"
+                        android:layout_height="360dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/uudai4_118"
+                        android:background="@drawable/duongvien4">
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/img_hinh5_118"
+                            android:layout_width="260dp"
+                            android:layout_height="140dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="0dp">
+                            <ImageView
+                                tools:ignore="ContentDescription"
+                                android:scaleType="centerCrop"
+                                android:layout_width="260dp"
+                                android:layout_height="130dp"
+                                android:background="@drawable/uudai5" />
+                        </androidx.cardview.widget.CardView>
+                        <TextView
+                            android:id="@+id/tieude_uudai5_118"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/img_hinh5_118"
+                            android:textColor="#181818"
+                            android:textSize="19dp"
+                            android:textStyle="bold"
+                            android:text="Lối nhỏ Nhà giao, bao xa cũng tới"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="15dp">
+                        </TextView>
+                        <TextView
+                            android:id="@+id/noidung_uudai5_118"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tieude_uudai5_118"
+                            android:textColor="#181818"
+                            android:textSize="17dp"
+                            android:text="Học tại nhà hay học online có thèm uống gì thì cứ gọi Nhà nha."
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="15dp">
+                        </TextView>
+                        <Button
+                            android:layout_width="130dp"
+                            android:layout_height="60dp"
+                            android:layout_below="@+id/noidung_uudai5_118"
+                            android:background="@drawable/duongvien6"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:text="Chi tiết"
+                            android:textColor="#FDCA89"
+                            android:textStyle="bold">
+                        </Button>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </HorizontalScrollView>
+            //2.4 Cập nhật từ nhà
+            <RelativeLayout
+                android:id="@+id/tintuc3_118"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/listuudai_118">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Cập nhật từ nhà"
+                    android:textColor="#28272C"
+                    android:textSize="22dp"
+                    android:textStyle="bold">
+                </TextView>
+            </RelativeLayout>
+            //2.5 Nội dung cập nhật từ nhà
+            <HorizontalScrollView
+                android:id="@+id/listcapnhat_118"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tintuc3_118"
+                android:layout_marginTop="20dp">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    //2.5.1 Cập nhật từ nhà 1
+                    <RelativeLayout
+                        android:id="@+id/capnhat1_118"
+                        android:layout_width="260dp"
+                        android:layout_height="360dp"
+                        android:layout_marginLeft="25dp"
+                        android:background="@drawable/duongvien4">
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/img_capnhat1_118"
+                            android:layout_width="260dp"
+                            android:layout_height="140dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="0dp">
+                            <ImageView
+                                tools:ignore="ContentDescription"
+                                android:scaleType="centerCrop"
+                                android:layout_width="260dp"
+                                android:layout_height="130dp"
+                                android:background="@drawable/capnhat1" />
+                        </androidx.cardview.widget.CardView>
+                        <TextView
+                            android:id="@+id/tieude_capnhat1_118"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/img_capnhat1_118"
+                            android:textColor="#181818"
+                            android:textSize="19dp"
+                            android:textStyle="bold"
+                            android:text="Nhà Reverside Vũ Tông Phan - Hà Nội vui khai trương linh đình"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="15dp">
+                        </TextView>
+                        <TextView
+                            android:id="@+id/noidung_capnhat1_118"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tieude_capnhat1_118"
+                            android:textColor="#181818"
+                            android:textSize="17dp"
+                            android:text="Hà Nội mùa này lạnh mấy. Cứ ghé Nhà mới là ấm ngay."
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="15dp">
+                        </TextView>
+                        <Button
+                            android:layout_width="130dp"
+                            android:layout_height="60dp"
+                            android:layout_below="@+id/noidung_capnhat1_118"
+                            android:background="@drawable/duongvien6"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:text="Order ngay"
+                            android:textColor="#FDCA89"
+                            android:textStyle="bold"></Button>
+                    </RelativeLayout>
+                    //2.5.2 Cập nhật từ nhà 2
+                    <RelativeLayout
+                        android:id="@+id/capnhat2_118"
+                        android:layout_width="260dp"
+                        android:layout_height="360dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@+id/capnhat1_118"
+                        android:background="@drawable/duongvien4">
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/img_capnhat2_118"
+                            android:layout_width="260dp"
+                            android:layout_height="140dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="0dp">
+                            <ImageView
+                                tools:ignore="ContentDescription"
+                                android:scaleType="centerCrop"
+                                android:layout_width="260dp"
+                                android:layout_height="130dp"
+                                android:background="@drawable/capnhat2" />
+                        </androidx.cardview.widget.CardView>
+                        <TextView
+                            android:id="@+id/tieude_capnhat2_118"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/img_capnhat2_118"
+                            android:textColor="#181818"
+                            android:textSize="19dp"
+                            android:textStyle="bold"
+                            android:text="Taste of Xmas - Chạm vị Giáng sinh"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="15dp">
+                        </TextView>
+                        <TextView
+                            android:id="@+id/noidung_capnhat2_118"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tieude_capnhat2_118"
+                            android:textColor="#181818"
+                            android:textSize="17dp"
+                            android:text="Những ngày cuối năm khác, Giáng sinh cùng vì thế mà khác hơn sau 1 năm đặc biệt."
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="15dp">
+                        </TextView>
+                        <Button
+                            android:layout_width="130dp"
+                            android:layout_height="60dp"
+                            android:layout_below="@+id/noidung_capnhat2_118"
+                            android:background="@drawable/duongvien6"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:text="Chi tiết"
+                            android:textColor="#FDCA89"
+                            android:textStyle="bold"></Button>
+                    </RelativeLayout>
+                    //2.5.3 Cập nhật từ nhà 3
+                    <RelativeLayout
+                        android:id="@+id/capnhat3_118"
+                        android:layout_width="260dp"
+                        android:layout_height="360dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@+id/capnhat2_118"
+                        android:background="@drawable/duongvien4">
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/img_capnhat3_118"
+                            android:layout_width="260dp"
+                            android:layout_height="140dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="0dp">
+                            <ImageView
+                                tools:ignore="ContentDescription"
+                                android:scaleType="centerCrop"
+                                android:layout_width="260dp"
+                                android:layout_height="130dp"
+                                android:background="@drawable/capnhat3" />
+                        </androidx.cardview.widget.CardView>
+                        <TextView
+                            android:id="@+id/tieude_capnhat3_118"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/img_capnhat3_118"
+                            android:textColor="#181818"
+                            android:textSize="19dp"
+                            android:textStyle="bold"
+                            android:text="Trời se lạnh, thưởng thức ngay những món nóng của Nhà"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="15dp">
+                        </TextView>
+                        <TextView
+                            android:id="@+id/noidung_capnhat3_118"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tieude_capnhat3_118"
+                            android:textColor="#181818"
+                            android:textSize="17dp"
+                            android:text="Những cơn mưa lạnh bất chợt thích hợp nhâm nhi thức uống nóng."
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="15dp">
+                        </TextView>
+                        <Button
+                            android:layout_width="130dp"
+                            android:layout_height="60dp"
+                            android:layout_below="@+id/noidung_capnhat3_118"
+                            android:background="@drawable/duongvien6"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:text="Order ngay"
+                            android:textColor="#FDCA89"
+                            android:textStyle="bold">
+                        </Button>
+                    </RelativeLayout>
+                    //2.5.4 Cập nhật 4
+                    <RelativeLayout
+                        android:id="@+id/capnhat4_118"
+                        android:layout_width="260dp"
+                        android:layout_height="360dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@+id/capnhat3_118"
+                        android:background="@drawable/duongvien4">
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/img_capnhat4_118"
+                            android:layout_width="260dp"
+                            android:layout_height="140dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="0dp">
+                            <ImageView
+                                tools:ignore="ContentDescription"
+                                android:scaleType="centerCrop"
+                                android:layout_width="260dp"
+                                android:layout_height="130dp"
+                                android:background="@drawable/capnhat4" />
+                        </androidx.cardview.widget.CardView>
+                        <TextView
+                            android:id="@+id/tieude_capnhat4_118"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/img_capnhat4_118"
+                            android:textColor="#181818"
+                            android:textSize="19dp"
+                            android:textStyle="bold"
+                            android:text="Khám phá không gian nhà mới: Hiện đại và sang trọng"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="15dp">
+                        </TextView>
+                        <TextView
+                            android:id="@+id/noidung_capnhat4_118"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tieude_capnhat4_118"
+                            android:textColor="#181818"
+                            android:textSize="17dp"
+                            android:text="Hiện đại và sang trọng là cảm giác khi bước vào."
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="15dp">
+                        </TextView>
+                        <Button
+                            android:layout_width="130dp"
+                            android:layout_height="60dp"
+                            android:layout_below="@+id/noidung_capnhat4_118"
+                            android:background="@drawable/duongvien6"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:text="Chi tiết"
+                            android:textColor="#FDCA89"
+                            android:textStyle="bold">
+                        </Button>
+                    </RelativeLayout>
+                    //2.5.5 Cập nhật từ nhà 5
+                    <RelativeLayout
+                        android:id="@+id/capnhat5_118"
+                        android:layout_width="260dp"
+                        android:layout_height="360dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/capnhat4_118"
+                        android:background="@drawable/duongvien4">
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/img_capnhat5_118"
+                            android:layout_width="260dp"
+                            android:layout_height="140dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="0dp">
+                            <ImageView
+                                tools:ignore="ContentDescription"
+                                android:scaleType="centerCrop"
+                                android:layout_width="260dp"
+                                android:layout_height="130dp"
+                                android:background="@drawable/capnhat5" />
+                        </androidx.cardview.widget.CardView>
+                        <TextView
+                            android:id="@+id/tieude_capnhat5_118"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/img_capnhat5_118"
+                            android:textColor="#181818"
+                            android:textSize="19dp"
+                            android:textStyle="bold"
+                            android:text="Nhà tặng bạn thêm 3 tháng đổi BEAN nhận ưu đãi"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="15dp">
+                        </TextView>
+                        <TextView
+                            android:id="@+id/noidung_capnhat5_118"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tieude_capnhat5_118"
+                            android:textColor="#181818"
+                            android:textSize="17dp"
+                            android:text="Dịch Covid-19 ảnh hưởng nên Nhà gia hạn thời gian đổi."
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="15dp">
+                        </TextView>
+                        <Button
+                            android:layout_width="130dp"
+                            android:layout_height="60dp"
+                            android:layout_below="@+id/noidung_capnhat5_118"
+                            android:background="@drawable/duongvien6"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:text="Chi tiết"
+                            android:textColor="#FDCA89"
+                            android:textStyle="bold">
+                        </Button>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </HorizontalScrollView>
+            //2.6 CoffeLover
+            <RelativeLayout
+                android:id="@+id/tintuc4_118"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/listcapnhat_118">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="25dp"
+                    android:text="#CoffeeLover"
+                    android:textColor="#28272C"
+                    android:textSize="22dp"
+                    android:textStyle="bold">
+                </TextView>
+            </RelativeLayout>
+            //2.7 Nội dung CoffeLover
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KhoiDong">
+    <ImageView
+        android:id="@+id/header_khoidong"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/header_khoidong">
+    </ImageView>
+    <TextView
+        android:id="@+id/text_coffehouse1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_khoidong"
+        android:layout_marginLeft="102dp"
+        android:layout_marginTop="50dp"
+        android:text="IN"
+        android:textColor="#E97F29"
+        android:textSize="80dp"></TextView>
+    <ImageView
+        android:id="@+id/text_coffehouse2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/text_coffehouse1"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/text_coffehouse"></ImageView>
+</RelativeLayout>

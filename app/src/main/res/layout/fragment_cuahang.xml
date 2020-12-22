@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context=".CuaHang.CuaHangFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Store"
+            android:textSize="22dp"
+            android:textColor="#343434"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="165dp"
+            android:layout_marginBottom="15dp">
+        </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:orientation="vertical"
+            android:background="#030303">
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+           <com.google.android.gms.maps.MapView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:id="@+id/mapsView"
+               android:name="com.google.android.gms.maps.SupportMapFragment">
+           </com.google.android.gms.maps.MapView>
+           <Button
+                    android:id="@+id/btnchonkhuvuc_118"
+                    android:layout_width="380dp"
+                    android:layout_height="70dp"
+                    android:text="Chọn khu vực"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/duongvien4"
+                    android:paddingLeft="10dp"
+                    android:drawableEnd="@drawable/ic_xoxuong">
+           </Button>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnchonkhuvuc_118"
+                android:layout_marginTop="280dp">
+            <RelativeLayout
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                  android:layout_marginBottom="20dp">
+                  //1. Quán 1
+                  <RelativeLayout
+                      android:id="@+id/quan1_118"
+                      android:layout_width="wrap_content"
+                      android:layout_height="250dp"
+                      android:layout_marginLeft="20dp"
+                      android:background="@drawable/duongvien4">
+                      <androidx.cardview.widget.CardView
+                          android:id="@+id/hinh1_118"
+                          android:layout_width="wrap_content"
+                          android:layout_height="170dp"
+                          app:cardCornerRadius="10dp"
+                          app:cardElevation="0dp">
+                          <ImageView
+                              tools:ignore="ContentDescription"
+                              android:scaleType="centerCrop"
+                              android:layout_width="220dp"
+                              android:layout_height="160dp"
+                              android:background="@drawable/cfnuithanh" />
+                      </androidx.cardview.widget.CardView>
+                      <TextView
+                          android:id="@+id/haichau1_118"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_below="@+id/hinh1_118"
+                          android:layout_marginTop="10dp"
+                          android:layout_marginLeft="10dp"
+                          android:text="Quận Hải Châu"
+                          android:textSize="18dp"
+                          android:textColor="#343434">
+                      </TextView>
+                      <TextView
+                          android:id="@+id/nuithanh_118"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_below="@+id/haichau1_118"
+                          android:layout_marginTop="3dp"
+                          android:layout_marginLeft="10dp"
+                          android:text="01 Núi Thành"
+                          android:textStyle="bold"
+                          android:textSize="20dp"
+                          android:textColor="#343434">
+                      </TextView>
+                  </RelativeLayout>
+                //2. Quán 2
+                <RelativeLayout
+                    android:id="@+id/quan2_118"
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:background="@drawable/duongvien4"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/quan1_118">
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/hinh2_118"
+                        android:layout_width="wrap_content"
+                        android:layout_height="170dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="0dp">
+                        <ImageView
+                            tools:ignore="ContentDescription"
+                            android:scaleType="centerCrop"
+                            android:layout_width="220dp"
+                            android:layout_height="160dp"
+                            android:background="@drawable/cfleduan" />
+                    </androidx.cardview.widget.CardView>
+                    <TextView
+                        android:id="@+id/thanhkhe1_118"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/hinh2_118"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Quận Thanh Khê"
+                        android:textSize="18dp"
+                        android:textColor="#343434">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/leduan_118"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/thanhkhe1_118"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="435 Lê Duẫn"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="#343434">
+                    </TextView>
+                </RelativeLayout>
+                //3. Quán 3
+                <RelativeLayout
+                    android:id="@+id/quan3_118"
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:background="@drawable/duongvien4"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/quan2_118">
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/hinh3_118"
+                        android:layout_width="wrap_content"
+                        android:layout_height="170dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="0dp">
+                        <ImageView
+                            tools:ignore="ContentDescription"
+                            android:scaleType="centerCrop"
+                            android:layout_width="220dp"
+                            android:layout_height="160dp"
+                            android:background="@drawable/cfpasteur" />
+                    </androidx.cardview.widget.CardView>
+                    <TextView
+                        android:id="@+id/haichau2_118"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/hinh3_118"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Quận Hải Châu"
+                        android:textSize="18dp"
+                        android:textColor="#343434">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/pasteur_118"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/haichau2_118"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="80 Pasteur"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="#343434">
+                    </TextView>
+                </RelativeLayout>
+                //4. Quán 4
+                <RelativeLayout
+                    android:id="@+id/quan4_118"
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:background="@drawable/duongvien4"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/quan3_118">
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/hinh4_118"
+                        android:layout_width="wrap_content"
+                        android:layout_height="170dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="0dp">
+                        <ImageView
+                            tools:ignore="ContentDescription"
+                            android:scaleType="centerCrop"
+                            android:layout_width="220dp"
+                            android:layout_height="160dp"
+                            android:background="@drawable/cftrieunuvuong" />
+                    </androidx.cardview.widget.CardView>
+                    <TextView
+                        android:id="@+id/haichau3_118"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/hinh4_118"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Quận Hải Châu"
+                        android:textSize="18dp"
+                        android:textColor="#343434">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/trieunuvuong_118"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/haichau3_118"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="09 Triệu Nữ Vương"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="#343434">
+                    </TextView>
+                </RelativeLayout>
+                //5. Quán 5
+                <RelativeLayout
+                    android:id="@+id/quan5_118"
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:background="@drawable/duongvien4"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@id/quan4_118">
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/hinh5_118"
+                        android:layout_width="wrap_content"
+                        android:layout_height="170dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="0dp">
+                        <ImageView
+                            tools:ignore="ContentDescription"
+                            android:scaleType="centerCrop"
+                            android:layout_width="220dp"
+                            android:layout_height="160dp"
+                            android:background="@drawable/cfnguyenchithanh" />
+                    </androidx.cardview.widget.CardView>
+                    <TextView
+                        android:id="@+id/haichau4_118"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/hinh5_118"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Quận Hải Châu"
+                        android:textSize="18dp"
+                        android:textColor="#343434">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/nguyenchithanh_118"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/haichau4_118"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="80A Nguyễn Chí Thanh"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="#343434">
+                    </TextView>
+                </RelativeLayout>
+            </RelativeLayout>
+            </HorizontalScrollView>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

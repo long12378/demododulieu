@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DatHang.TabDatHang.LichSuFragment">
+
+    <LinearLayout
+        android:id="@+id/lineardouong"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Thức Uống"
+            android:textSize="18dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="8dp"></TextView>
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gridviewdouong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lineardouong"
+        android:horizontalSpacing="1dp"
+        android:numColumns="2"
+        android:verticalSpacing="1dp"></GridView>
+</RelativeLayout>

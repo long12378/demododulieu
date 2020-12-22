@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TaiKhoan.TaiKhoanFragment"
+    android:background="#FFF">
+    //1. Avata
+    <ImageView
+        android:id="@+id/anhdaidien_118"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/anhdaidien2">
+    </ImageView>
+    //2. Tên khách hàng
+    <TextView
+        android:id="@+id/hoten_118"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VŨ ANH KHOA NGUYỄN"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="25dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#181818"
+        ></TextView>
+    //3. Loại thành viên
+    <TextView
+        android:id="@+id/loaithanhvien_118"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hoten_118"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="5dp"
+        android:text="Khách hàng mới"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="#181818"></TextView>
+    //4. Điểm tích lũy
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/traicaphe"
+        android:layout_marginLeft="350dp"
+        android:layout_marginTop="40dp">
+    </ImageView>
+    //5. Thanh ngang 1
+    <LinearLayout
+        android:id="@+id/thanhngang1_profile_118"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/anhdaidien_118"
+        android:background="#E4E3E8">
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/main1_118"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/thanhngang1_profile_118">
+        //6. Khung 1
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/icon_thecoffehouserewards_118"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/ic_star">
+                </ImageView>
+                <TextView
+                    android:id="@+id/txt_thecoffehouserewards_118"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The Coffee House Rewards"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="16dp"
+                    android:textColor="#181818"
+                    android:textFontWeight="10">
+                </TextView>
+        </LinearLayout>
+        //7. Khung 2
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/icon_thongtintaikhoan_118"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ic_taikhoan">
+            </ImageView>
+            <TextView
+                android:id="@+id/txt_thongtintaikhoan_118"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thông tin tài khoản"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="16dp"
+                android:textColor="#181818"
+                android:textFontWeight="10">
+            </TextView>
+        </LinearLayout>
+        //8. Khung 3
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/icon_nhacdangphat_118"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ic_music">
+            </ImageView>
+            <TextView
+                android:id="@+id/txt_nhacdangphat_118"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nhạc đang phát"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="16dp"
+                android:textColor="#181818"
+                android:textFontWeight="10">
+            </TextView>
+        </LinearLayout>
+        //9. Khung 4
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/icon_lichsu_118"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ic_lichsu">
+            </ImageView>
+            <TextView
+                android:id="@+id/txt_lichsu_118"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lịch sử"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="16dp"
+                android:textColor="#181818"
+                android:textFontWeight="10">
+            </TextView>
+        </LinearLayout>
+        //10. Khung 5
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/icon_giupdo_118"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ic_giupdo">
+            </ImageView>
+            <TextView
+                android:id="@+id/txt_giupdo_118"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giúp đỡ"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="16dp"
+                android:textColor="#181818"
+                android:textFontWeight="10">
+            </TextView>
+        </LinearLayout>
+        // 11. Khung 6
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/icon_caidat_118"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ic_caidat">
+            </ImageView>
+            <TextView
+                android:id="@+id/txt_caidat_118"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cài đặt"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="16dp"
+                android:textColor="#181818"
+                android:textFontWeight="10">
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/main2_118"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/main1_118"
+        android:background="#F0EFF4">
+        <TextView
+            android:id="@+id/txt_dangxuat_118"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đăng xuất"
+            android:textSize="22dp"
+            android:textColor="#181818"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp">
+        </TextView>
+
+    </LinearLayout>
+
+</RelativeLayout>
