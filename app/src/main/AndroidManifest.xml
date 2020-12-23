@@ -26,8 +26,10 @@
         <activity android:name=".NhapMaXacThuc" />
         <activity android:name=".NhapSoDienThoai" />
         <activity android:name=".Login" />
+        <activity android:name=".dangnhap_dangki.DangkiActivity" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".KhoiDong">
+        <activity android:name=".dangnhap_dangki.LoginActivity"/>
+        <activity android:name=".KhoiDong" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -23,8 +23,8 @@
        <TextView
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
-           android:text="Vũ Anh Khoa Nguyễn"
-           android:textColor="#1A1A1A"
+           android:text="The Coffe House"
+           android:textColor="#FFB300"
            android:textStyle="bold"
            android:textSize="19dp"
            android:layout_marginTop="10dp"
@@ -34,7 +34,7 @@
            android:layout_height="wrap_content"
            android:layout_marginTop="45dp"
            android:layout_marginLeft="80dp"
-           android:text="Khách hàng mới"
+           android:text="Thành viên"
            android:textSize="18dp"></TextView>
        <LinearLayout
            android:layout_width="1dp"

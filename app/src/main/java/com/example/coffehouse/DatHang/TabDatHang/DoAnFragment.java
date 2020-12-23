@@ -12,6 +12,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.coffehouse.R;
 import com.example.coffehouse.database.database;
@@ -26,7 +28,8 @@ public class DoAnFragment extends Fragment {
     Context context;
     private List<sanpham> doanData;
     private DoAnAdapter doanAdapter;
-
+    public static TextView tongtien;
+    public static sanphamorder productorder;
     public DoAnFragment(){
     }
 
@@ -50,8 +53,54 @@ public class DoAnFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int i, long id) {
 
-                Dialog dialog = new Dialog(DoAnFragment.this.getActivity());
+                final Dialog dialog = new Dialog(DoAnFragment.this.getActivity());
                 dialog.setContentView(R.layout.activity_muahang);
+                TextView tensporder = dialog.findViewById(R.id.dathang_tensanpham_118);
+                ImageView imagesporder = dialog.findViewById(R.id.dathang_sanpham_118);
+                TextView giasporder = dialog.findViewById(R.id.dathang_gia_118);
+                tongtien = dialog.findViewById(R.id.tongtien);
+                TextView soluong = dialog.findViewById(R.id.number_118);
+                tensporder.setText(doanData.get(i).getTensp());
+                String hinhanhorder = doanData.get(i).getHinhanh();
+                int bitmaporder = (DoAnFragment.this.getActivity()).getResources().getIdentifier(hinhanhorder,"drawable",DoAnFragment.this.getActivity().getPackageName());
+                imagesporder.setImageResource(bitmaporder);
+                soluong.setText("1");
+                giasporder.setText(doanData.get(i).getGia());
+                tongtien.setText(doanData.get(i).getGia());
+                int thanhtien = Integer.parseInt(doanData.get(i).getGia());
+
+                productorder = new sanphamorder();
+                productorder.setGiasp(thanhtien);
+                productorder.setSoluong(Integer.parseInt((String) soluong.getText()));
+                productorder.setTensp(tensporder.toString());
+                productorder.setImagesp(bitmaporder);
+                dialog.findViewById(R.id.giamsoluong_118).setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        if(productorder.getSoluong() > 1){
+                            productorder.setSoluong(productorder.getSoluong() - 1);
+                        }
+                        tongtien.setText(String.valueOf(productorder.thanhtien()));
+                        TextView numberofproduct = dialog.findViewById(R.id.number_118);
+                        numberofproduct.setText(String.valueOf(productorder.getSoluong()));
+                        if(productorder.getSoluong()<1){
+                            productorder.setSoluong(1);
+                        }
+                    }
+                });
+                dialog.findViewById(R.id.tangsoluong_118).setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        productorder.setSoluong(productorder.getSoluong()+1);
+                        tongtien.setText(String.valueOf(productorder.thanhtien()));
+                        TextView numberofproduct = dialog.findViewById(R.id.number_118);
+                        numberofproduct.setText(String.valueOf(productorder.getSoluong()));
+                        if(productorder.getSoluong()>1){
+                            dialog.findViewById(R.id.tangsoluong_118).setClickable(true);
+                        }
+                    }
+                });
+
                 dialog.show();
             }
         });
@@ -59,7 +108,7 @@ public class DoAnFragment extends Fragment {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
                 Dialog dialog = new Dialog(DoAnFragment.this.getActivity());
-                dialog.setContentView(R.layout.fragment_do_an);
+                dialog.setContentView(R.layout.fragment_pho_bien);
                 dialog.show();
                 return true;
             }

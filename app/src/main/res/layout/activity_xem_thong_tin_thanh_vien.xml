@@ -44,7 +44,7 @@
                 android:layout_height="200dp"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
-                android:src="@drawable/header_xemthongtinthanhvien">
+                android:src="@drawable/header_xemthongtinthanhvien2">
             </ImageView>
             <RelativeLayout
                 android:id="@+id/noidung1_118"

@@ -9,6 +9,7 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.coffehouse.dangnhap_dangki.LoginActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class KhoiDong extends AppCompatActivity {
@@ -24,7 +25,7 @@ public class KhoiDong extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(KhoiDong.this,Login.class);
+                Intent intent = new Intent(KhoiDong.this, LoginActivity.class);
                 startActivity(intent);
                 finish();
             }

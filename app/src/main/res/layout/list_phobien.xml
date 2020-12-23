@@ -65,5 +65,17 @@
             android:layout_marginLeft="50dp"
             android:layout_marginTop="10dp"></ImageView>
 
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignStart="@+id/gia_118"
+            android:layout_alignBottom="@+id/gia_118"
+            android:layout_marginStart="81dp"
+            android:layout_marginBottom="-3dp"
+            android:text="đ"
+            android:textAlignment="center"
+            android:textSize="20dp" />
+
     </RelativeLayout>
 </RelativeLayout>

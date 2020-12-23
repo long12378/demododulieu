@@ -20,12 +20,12 @@
         android:id="@+id/hoten_118"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="VŨ ANH KHOA NGUYỄN"
+        android:text="The Coffe House"
         android:layout_marginLeft="90dp"
         android:layout_marginTop="25dp"
         android:textSize="18dp"
         android:textStyle="bold"
-        android:textColor="#181818"
+        android:textColor="#DA8B27"
         ></TextView>
     //3. Loại thành viên
     <TextView
@@ -35,7 +35,7 @@
         android:layout_below="@id/hoten_118"
         android:layout_marginLeft="90dp"
         android:layout_marginTop="5dp"
-        android:text="Khách hàng mới"
+        android:text="Thành viên"
         android:textSize="16dp"
         android:textStyle="bold"
         android:textColor="#181818"></TextView>
@@ -83,7 +83,7 @@
                     android:layout_marginTop="20dp"
                     android:layout_marginLeft="15dp"
                     android:textSize="16dp"
-                    android:textColor="#181818"
+                    android:textColor="#FFB300"
                     android:textFontWeight="10">
                 </TextView>
         </LinearLayout>
@@ -108,7 +108,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="15dp"
                 android:textSize="16dp"
-                android:textColor="#181818"
+                android:textColor="#FFB300"
                 android:textFontWeight="10">
             </TextView>
         </LinearLayout>
@@ -133,7 +133,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="15dp"
                 android:textSize="16dp"
-                android:textColor="#181818"
+                android:textColor="#FFB300"
                 android:textFontWeight="10">
             </TextView>
         </LinearLayout>
@@ -158,7 +158,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="15dp"
                 android:textSize="16dp"
-                android:textColor="#181818"
+                android:textColor="#FFB300"
                 android:textFontWeight="10">
             </TextView>
         </LinearLayout>
@@ -183,7 +183,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="15dp"
                 android:textSize="16dp"
-                android:textColor="#181818"
+                android:textColor="#FFB300"
                 android:textFontWeight="10">
             </TextView>
         </LinearLayout>
@@ -208,7 +208,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="15dp"
                 android:textSize="16dp"
-                android:textColor="#181818"
+                android:textColor="#FFB300"
                 android:textFontWeight="10">
             </TextView>
         </LinearLayout>
@@ -220,16 +220,17 @@
         android:layout_height="match_parent"
         android:layout_below="@id/main1_118"
         android:background="#F0EFF4">
-        <TextView
+        <Button
             android:id="@+id/txt_dangxuat_118"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Đăng xuất"
             android:textSize="22dp"
-            android:textColor="#181818"
+            android:background="@drawable/button_customer"
+            android:textColor="#FFB300"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp">
-        </TextView>
+        </Button>
 
     </LinearLayout>
 

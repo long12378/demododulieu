@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bcf">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:background="@color/trans"
+            android:src="@drawable/ic_back"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/header_khoidong"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đăng Nhập hoặc Đăng Ký"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:gravity="center"/>
+        <Button
+            android:id="@+id/logindt"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:backgroundTint="@color/green"
+            android:drawableLeft="@drawable/ic_phone"
+            android:text="Đăng nhập với Số điện thoại"
+            android:textAllCaps="false"
+            android:textSize="14dp"
+            android:textColor="@color/white" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:backgroundTint="@color/blue"
+            android:drawableLeft="@drawable/ic_facebook"
+            android:text="Đăng nhập với Facebook"
+            android:textAllCaps="false"
+            android:textSize="14dp"
+            android:textColor="@color/white" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:backgroundTint="@color/red"
+            android:drawableLeft="@drawable/ic_google"
+            android:text="Đăng nhập với Facebook"
+            android:textAllCaps="false"
+            android:textSize="14dp"
+            android:textColor="@color/white"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:text="Hoặc đăng nhập bằng tài khoản của bạn"
+            android:gravity="center"/>
+        <EditText
+            android:background="@drawable/edit"
+            android:padding="5dp"
+            android:id="@+id/eUser"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:inputType="text"
+            android:elevation="5dp"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawablePadding="5dp"
+            android:hint="Địa chỉ Email của bạn"
+           />
+        <EditText
+            android:background="@drawable/edit"
+            android:padding="5dp"
+            android:id="@+id/ePass"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:inputType="textPassword"
+            android:elevation="5dp"
+            android:drawableLeft="@drawable/ic_pass"
+            android:drawablePadding="5dp"
+            android:hint="Mật khẩu của bạn"
+            />
+        <Button
+            android:id="@+id/btnsignin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Đăng nhập"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/btndangki"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="@color/blue"
+            android:text="Đăng Kí"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textAllCaps="false"/>
+        <Button
+            android:background="@drawable/button_customer"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/quen_pass"
+            android:textSize="15sp"
+            android:textColor="@color/bgr"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/log1"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/log2"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"/>
+</RelativeLayout>

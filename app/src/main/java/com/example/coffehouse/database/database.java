@@ -16,7 +16,7 @@ import java.util.List;
 public class database extends SQLiteOpenHelper {
     private static final String TAG = "SQLite";
     private static final int DATABASE_VERSION = 1;
-    private static final String DATABASE_NAME = "coffeehouse";
+    private static final String DATABASE_NAME = "coffee_house";
 
     public database(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -52,6 +52,7 @@ public class database extends SQLiteOpenHelper {
         cursor.close();
         return count;
     }
+
     public void createDefaultsanphamIfNeed(){
         SQLiteDatabase db = getWritableDatabase();
         int count = this.getCapheCount();
@@ -64,29 +65,29 @@ public class database extends SQLiteOpenHelper {
 //            this.AddCaphe(caphe3);
             String sql = "INSERT INTO  sanpham VALUES(NULL, 1,'douong' , 'Cà phê Lúa Mạch đá xay', '70000', 'phobien1')";
             db.execSQL(sql);
-            sql = "INSERT INTO  sanpham VALUES(NULL,1, 'douong',  'Cà phê Lúa Mạch nóng', '300000', 'phobien2')";
+            sql = "INSERT INTO  sanpham VALUES(NULL,1, 'douong',  'Cà phê Lúa Mạch nóng', '55000', 'phobien2')";
             db.execSQL(sql);
-            sql = "INSERT INTO  sanpham VALUES(NULL,1,'douong', 'Sôcôla Lúa Mạch đá xay', '300000', 'phobien3')";
+            sql = "INSERT INTO  sanpham VALUES(NULL,1,'douong', 'Sôcôla Lúa Mạch đá xay', '60000', 'phobien3')";
             db.execSQL(sql);
-            sql = "INSERT INTO  sanpham VALUES(NULL,1,'douong', 'Sôcôla Lúa Mạch nóng', '300000', 'phobien4')";
+            sql = "INSERT INTO  sanpham VALUES(NULL,1,'douong', 'Sôcôla Lúa Mạch nóng', '80000', 'phobien4')";
             db.execSQL(sql);
-            sql = "INSERT INTO  sanpham VALUES(NULL,0,'douong', 'Sôcôla Lúa Mạch nóng', '300000', 'phobien5')";
+            sql = "INSERT INTO  sanpham VALUES(NULL,0,'douong', 'Sôcôla Lúa Mạch nóng không đường', '80000', 'phobien5')";
             db.execSQL(sql);
-            sql = "INSERT INTO  sanpham VALUES(NULL,1,'douong', 'Sôcôla Lúa Mạch nóng', '300000', 'phobien6')";
+            sql = "INSERT INTO  sanpham VALUES(NULL,1,'douong', 'Sôcôla Lúa Mạch nóng mật ong', '85000', 'phobien6')";
             db.execSQL(sql);
-            sql = "INSERT INTO  sanpham VALUES(NULL,1,'douong', 'Trà sữa Mắc Ca Trân Châu Trắng', '300000', 'phobien7')";
+            sql = "INSERT INTO  sanpham VALUES(NULL,1,'douong', 'Trà sữa Mắc Ca Trân Châu Trắng', '50000', 'phobien7')";
             db.execSQL(sql);
-            sql = "INSERT INTO  sanpham VALUES(NULL,1,'douong', 'Trà đào cam sả và mật ong', '300000', 'phobien8')";
+            sql = "INSERT INTO  sanpham VALUES(NULL,1,'douong', 'Trà đào cam sả và mật ong', '60000', 'phobien8')";
             db.execSQL(sql);
-            sql = "INSERT INTO  sanpham VALUES(NULL,0,'douong', 'Oolong Hạt Sen - Đá đặc biệt', '300000', 'phobien9')";
+            sql = "INSERT INTO  sanpham VALUES(NULL,0,'douong', 'Oolong Hạt Sen - Đá đặc biệt', '40000', 'phobien9')";
             db.execSQL(sql);
-            sql = "INSERT INTO  sanpham VALUES(NULL,1,'douong', 'Trà Oolong Phúc Bồn Tử', '300000', 'phobien10')";
+            sql = "INSERT INTO  sanpham VALUES(NULL,1,'douong', 'Trà Oolong Phúc Bồn Tử', '30000', 'phobien10')";
             db.execSQL(sql);
-            sql = "INSERT INTO  sanpham VALUES(NULL,1,'doan', 'Macca Phủ Socola', '300000', 'phobien1')";
+            sql = "INSERT INTO  sanpham VALUES(NULL,1,'doan', 'Macca Phủ Socola', '30000', 'phobien1')";
             db.execSQL(sql);
-            sql = "INSERT INTO  sanpham VALUES(NULL,0,'doan', 'Mít sấy', '300000', 'doan2')";
+            sql = "INSERT INTO  sanpham VALUES(NULL,0,'doan', 'Mít sấy', '30000', 'doan2')";
             db.execSQL(sql);
-            sql = "INSERT INTO  sanpham VALUES(NULL,0,'doan', 'Cơm cháy chà bông', '300000', 'doan3')";
+            sql = "INSERT INTO  sanpham VALUES(NULL,0,'doan', 'Cơm cháy chà bông', '30000', 'doan3')";
             db.execSQL(sql);
         }
 

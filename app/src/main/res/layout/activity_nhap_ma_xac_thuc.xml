@@ -29,7 +29,7 @@
         android:layout_below="@+id/thanhngang_nhapsodienthoai_118"
         android:layout_marginTop="20dp"
         android:textSize="20dp"
-        android:text="Nhập mã xác thực gồm 6 số đã được gửi đến số điện thoại 0965072230 để tiếp tục">
+        android:text="Nhập mã xác thực gồm 6 số đã được gửi đến số điện thoại 0909909090 để tiếp tục">
     </TextView>
     <EditText
         android:id="@+id/nhapmaxacthuc_118"

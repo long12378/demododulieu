@@ -16,6 +16,7 @@ import com.example.coffehouse.Login;
 import com.example.coffehouse.R;
 import com.example.coffehouse.TaiKhoan.ThongTinCaNhan.XemThongTinCaNhan;
 import com.example.coffehouse.TaiKhoan.ThongTinThanhVien.XemThongTinThanhVien;
+import com.example.coffehouse.dangnhap_dangki.LoginActivity;
 
 
 public class TaiKhoanFragment extends Fragment {
@@ -58,6 +59,7 @@ public class TaiKhoanFragment extends Fragment {
                 openXemThongTinThanhVien();
             }
         });
+//
         return root;
     }
     //1.
@@ -72,7 +74,7 @@ public class TaiKhoanFragment extends Fragment {
     }
     //3
     public void openLogin(){
-        Intent intent=new Intent(TaiKhoanFragment.this.getActivity(), Login.class);
+        Intent intent=new Intent(TaiKhoanFragment.this.getActivity(), LoginActivity.class);
         startActivity(intent);
     }
     //4

@@ -32,9 +32,9 @@
        android:layout_below="@+id/anhdaidien2_118"
        android:layout_marginTop="10dp"
        android:layout_centerHorizontal="true"
-       android:text="Vũ Anh Khoa Nguyễn"
+       android:text="The Coffe House"
        android:textSize="18dp"
-       android:textColor="#828282">
+       android:textColor="#FFB300">
    </TextView>
    <TextView
        android:id="@+id/sodiemtichluy_118"
@@ -46,7 +46,7 @@
        android:textColor="#F1C27D"
        android:textStyle="bold"
        android:textSize="15dp"
-       android:text="10">
+       android:text="200">
    </TextView>
    <ImageView
        android:id="@+id/traicaphe"
@@ -77,9 +77,9 @@
        android:layout_toRightOf="@id/phancach_118"
        android:layout_marginTop="3dp"
        android:layout_marginLeft="5dp"
-       android:text="Khách hàng mới"
+       android:text="Thành Viên"
        android:textSize="15dp"
-       android:textColor="#595959"
+       android:textColor="#FB8C00"
        android:textStyle="bold">
    </TextView>
    <LinearLayout
@@ -109,7 +109,7 @@
           android:textColor="#3A94F4"
           android:textStyle="bold"
           android:textSize="18dp"
-          android:layout_marginLeft="220dp"
+          android:layout_marginLeft="200dp"
           android:layout_marginTop="13dp">
       </TextView>
    </LinearLayout>
@@ -127,8 +127,8 @@
              android:id="@+id/ten_118"
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
-             android:text="Tên"
-             android:textColor="#AFAFAF"
+             android:text="Họ Và Tên"
+             android:textColor="@color/black"
              android:textStyle="bold"
              android:layout_marginTop="10dp"
              android:layout_marginBottom="10dp"
@@ -138,8 +138,8 @@
              android:id="@+id/fullten_118"
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
-             android:text="Vũ Anh Khoa Nguyễn"
-             android:textColor="#2C2C2C"
+             android:text="The Coffe House"
+             android:textColor="#AFAFAF"
              android:textStyle="bold"
              android:textSize="16dp"
              android:layout_marginBottom="10dp"
@@ -158,8 +158,8 @@
              android:id="@+id/sinhnhat_118"
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
-             android:text="Sinh nhật"
-             android:textColor="#AFAFAF"
+             android:text="Địa chỉ"
+             android:textColor="@color/black"
              android:textStyle="bold"
              android:layout_marginTop="10dp"
              android:layout_marginBottom="10dp"
@@ -169,8 +169,8 @@
              android:id="@+id/fullsinhnhat_118"
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
-             android:text="12/06/1997"
-             android:textColor="#2C2C2C"
+             android:text="48 Cao Thắng"
+             android:textColor="#AFAFAF"
              android:textStyle="bold"
              android:textSize="16dp"
              android:layout_marginBottom="10dp"
@@ -190,7 +190,7 @@
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
              android:text="Số điện thoại"
-             android:textColor="#AFAFAF"
+             android:textColor="@color/black"
              android:textStyle="bold"
              android:layout_marginTop="10dp"
              android:layout_marginBottom="10dp"
@@ -200,8 +200,8 @@
              android:id="@+id/fullsodienthoai_118"
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
-             android:text="0965072230"
-             android:textColor="#2C2C2C"
+             android:text="0909909090"
+             android:textColor="#AFAFAF"
              android:textStyle="bold"
              android:textSize="16dp"
              android:layout_marginBottom="10dp"

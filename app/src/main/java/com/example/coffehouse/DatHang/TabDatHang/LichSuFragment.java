@@ -12,6 +12,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.coffehouse.R;
 import com.example.coffehouse.database.database;
@@ -30,6 +32,8 @@ public class LichSuFragment extends Fragment {
     private ConstraintLayout rela;
     private List<sanpham> douongData;
     private DoUongAdapter adapter;
+    public static TextView tongtien;
+    public static sanphamorder productorder;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -89,19 +93,57 @@ public class LichSuFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int i, long id) {
 
-                Dialog dialog = new Dialog(LichSuFragment.this.getActivity());
+                final Dialog dialog = new Dialog(LichSuFragment.this.getActivity());
                 dialog.setContentView(R.layout.activity_muahang);
+                TextView tensporder = dialog.findViewById(R.id.dathang_tensanpham_118);
+                ImageView imagesporder = dialog.findViewById(R.id.dathang_sanpham_118);
+                TextView giasporder = dialog.findViewById(R.id.dathang_gia_118);
+                tongtien = dialog.findViewById(R.id.tongtien);
+                TextView soluong = dialog.findViewById(R.id.number_118);
+                tensporder.setText(douongData.get(i).getTensp());
+                String hinhanhorder = douongData.get(i).getHinhanh();
+                int bitmaporder = (LichSuFragment.this.getActivity()).getResources().getIdentifier(hinhanhorder,"drawable",LichSuFragment.this.getActivity().getPackageName());
+                imagesporder.setImageResource(bitmaporder);
+                soluong.setText("1");
+                giasporder.setText(douongData.get(i).getGia());
+                tongtien.setText(douongData.get(i).getGia());
+                int thanhtien = Integer.parseInt(douongData.get(i).getGia());
+
+                productorder = new sanphamorder();
+                productorder.setGiasp(thanhtien);
+                productorder.setSoluong(Integer.parseInt((String) soluong.getText()));
+                productorder.setTensp(tensporder.toString());
+                productorder.setImagesp(bitmaporder);
+                dialog.findViewById(R.id.giamsoluong_118).setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        if(productorder.getSoluong() > 1){
+                            productorder.setSoluong(productorder.getSoluong() - 1);
+                        }
+                        tongtien.setText(String.valueOf(productorder.thanhtien()));
+                        TextView numberofproduct = dialog.findViewById(R.id.number_118);
+                        numberofproduct.setText(String.valueOf(productorder.getSoluong()));
+                        if(productorder.getSoluong()<1){
+                            productorder.setSoluong(1);
+                        }
+                    }
+                });
+                dialog.findViewById(R.id.tangsoluong_118).setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        productorder.setSoluong(productorder.getSoluong()+1);
+                        tongtien.setText(String.valueOf(productorder.thanhtien()));
+                        TextView numberofproduct = dialog.findViewById(R.id.number_118);
+                        numberofproduct.setText(String.valueOf(productorder.getSoluong()));
+                        if(productorder.getSoluong()>1){
+                            dialog.findViewById(R.id.tangsoluong_118).setClickable(true);
+                        }
+                    }
+                });
+
                 dialog.show();
             }
         });
-        gridView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
-            @Override
-            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
-                Dialog dialog = new Dialog(LichSuFragment.this.getActivity());
-                dialog.setContentView(R.layout.fragment_lich_su);
-                dialog.show();
-                return true;
-            }
-        });
+
     }
 }
