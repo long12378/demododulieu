@@ -1,23 +1,3 @@
 <resources>
-    <string name="app_name">TheCoffeeHouse</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title_activity_footer">MainActivity</string>
-    <string name="title_tintuc">Tin tức</string>
-    <string name="title_dathang">Đặt hàng</string>
-    <string name="title_cuahang">Cửa hàng</string>
-    <string name="title_taikhoan">Tài khoản</string>
-    <string-array name="hoatdong">
-        <item>Hoạt động</item>
-        <item>Bình luận</item>
-        <item>Đã check-in</item>
-        <item>Hình ảnh</item>
-    </string-array>
-    <string-array name="thanhpho">
-        <item>Thành phố</item>
-    </string-array>
-    <string name="quen_pass"><u>Quên mật khẩu</u></string>
-    <string name="log1">Chúng tôi sẻ không sử dụng thông tin của bạn với bất kỳ mục đích nào khác.</string>
-    <string name="log2">Bằng cách đăng nhập hoặc đăng ký, bạn đồng ý với <u>điều khoản sử dụng</u></string>
-
+    <string name="app_name">btthandroid</string>
 </resources>

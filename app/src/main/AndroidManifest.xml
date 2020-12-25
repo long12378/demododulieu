@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.coffehouse">
-
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    package="com.example.btthandroid">
 
     <application
         android:allowBackup="true"
@@ -12,24 +8,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".MuaHang"></activity>
-        <activity android:name=".TinTuc.Uudai.Uudai1" />
-
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyDAqUwcN07tioAGQJ-qOvL7fk0X2uZmZpk" />
-
-        <activity android:name=".TaiKhoan.ThongTinThanhVien.XemThongTinThanhVien" />
-        <activity android:name=".TaiKhoan.ThongTinCaNhan.SuaThongTin" />
-        <activity android:name=".TaiKhoan.ThongTinCaNhan.XemThongTinCaNhan" />
-        <activity android:name=".NhapMaXacThuc" />
-        <activity android:name=".NhapSoDienThoai" />
-        <activity android:name=".Login" />
-        <activity android:name=".dangnhap_dangki.DangkiActivity" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".dangnhap_dangki.LoginActivity"/>
-        <activity android:name=".KhoiDong" >
+        android:theme="@style/Theme.Btthandroid">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
